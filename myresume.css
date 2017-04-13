@@ -1,0 +1,153 @@
+*{
+		font-family: verdana;
+		margin:0;
+		padding: 0;
+
+	}
+
+	body {
+	
+		background-color: whitesmoke;
+
+
+   		}
+
+   	.header{
+
+   		width:100%;
+   		background-color: #fff;
+		position:fixed;
+		top:0;
+		
+   	}
+
+   	.headerlinks {
+   		
+   		display: flex;
+		justify-content: space-around;
+
+   	}
+
+   	.headerlinks a{
+	text-decoration: none;
+	padding: 10px;
+	color: purple;
+	
+}
+
+.headerlinks a:visited{
+	text-decoration: none;
+	color: purple;
+}
+
+.headerlinks a:hover{
+	background-color: #555;
+	color: orange;
+}
+
+.mainbody{
+	margin: 30px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.myinfo{
+
+	display: flex;
+	
+	margin-top: 100px;
+	justify-content: space-around;
+	
+
+}
+#profilepic{
+	
+	height: 300px;
+	width:320px;
+	border:1px solid grey;
+	border-radius:50%;
+
+}
+.centerpart{
+	background-color: #fff;
+	width:600px;
+	padding: 50px;	
+
+}
+.centerleftpart{
+	display: flex;
+	justify-content: center;
+	
+}
+.contentcenterpart{
+	color:#4a4a4a;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: Roboto,sans-serif;
+	
+}
+
+.centerpartlinks{
+	
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+	
+	
+}
+
+.centerpartlinksinnerdiv{
+	
+	width:50%;
+	display: flex;
+	justify-content: space-around;
+	
+
+}
+
+tr.spaceintable > td
+{
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    background-color:#fff;
+}
+
+tr > td
+{
+  padding-bottom: 1em;
+}
+
+.Education{
+
+	margin-top: 100px;
+	
+}
+
+.Educationinnerdiv{
+	display: flex;
+	justify-content: space-between;
+}
+.technicalskillsimages{
+	display: flex;
+	padding:10px;
+	justify-content: space-around;
+}
+
+.ContactInfo{
+	background-color: #4a4a4a;
+
+}
+
+#airhockeyimage{
+	cursor: pointer;
+}
