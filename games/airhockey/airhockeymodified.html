@@ -13,18 +13,18 @@
 
 	<div class="arrows" id="leftArrows">
 		<div class="arrowUp" id="leftArrowUp">
-			<i class="fa fa-arrow-up" aria-hidden="true" style="font-size:30px;"></i>
+			<i class="fa fa-arrow-up" aria-hidden="true" ></i>
 		</div>
 		<br>
 		<div class="arrowDown" id="leftArrowDown">
 
-			<i class="fa fa-arrow-down" aria-hidden="true" style="font-size:30px;"></i>
+			<i class="fa fa-arrow-down" aria-hidden="true" ></i>
 		</div>
 	</div>	
 
   	<div class="speed">
 		<span id="speedText"> Speed </span>
-		<div>
+		<div id="speedinner">
 			<div id="slow"> Slow </div>
 			<div id="medium"> Medium </div>
 			<div id="fast"> Fast </div>
@@ -33,11 +33,11 @@
 
 	<div class="arrows" id="rightArrows">
 	  	<div class="arrowUp" id="rightArrowUp">
-	  		<i class="fa fa-arrow-up" aria-hidden="true" style="font-size:30px;"></i>
+	  		<i class="fa fa-arrow-up" aria-hidden="true" "></i>
 		</div>
 	  	<br>
 	  	<div class="arrowDown" id="rightArrowDown">
-	  		<i class="fa fa-arrow-down" aria-hidden="true" style="font-size:30px;"></i>
+	  		<i class="fa fa-arrow-down" aria-hidden="true" "></i>
 		</div> 	
 	</div>
  
@@ -76,7 +76,7 @@
 
   	<div class="difficulty">
 		<span id="difficultyText"> Difficulty </span>
-		<div >
+		<div id="difficultyinner">
 			<div id="amatuer"> Amatuer </div>
 			<div id="pro"> Pro </div>
 			<div id="ninja"> Ninja </div>
@@ -85,14 +85,14 @@
 
   	<div class="scoreouterheader">
 	  	<div class="score" id="score1">
-	  		<span> <strong>Player1</strong></span>
-			<span id="scoreText1">  Score </span>
+	  		<span class="scoreplayerheading"> <strong>Player1</strong></span>
+			<span class="scoreText">  Score </span>
 			<span id="scoreValue1">0</span>
 		</div>
 
 		<div class="score" id="score2">
-			<span> <strong>Player2</strong></span>
-			<span id="scoreText2"> Score </span>
+			<span> <strong class="scoreplayerheading">Player2</strong></span>
+			<span class="scoreText"> Score </span>
 			<span id="scoreValue2">0</span>
 		</div>
 	</div>
@@ -106,8 +106,7 @@
 </body>
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 <script src="airhockey.js"></script>
-
 </html>
