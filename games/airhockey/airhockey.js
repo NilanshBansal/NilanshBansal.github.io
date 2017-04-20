@@ -121,18 +121,21 @@ else if ( $(window).width() > 1100)
 	var rightArrowUp=document.getElementById("rightArrowUp");
 	var rightArrowDown=document.getElementById("rightArrowDown");
 
-	leftArrowUp.addEventListener("mousedown",leftStrikerUpGenerator);
-	leftArrowUp.addEventListener("mouseup",leftStrikerUpDestroyer);
+	
 
-	leftArrowDown.addEventListener("mousedown",leftStrikerDownGenerator);
-	leftArrowDown.addEventListener("mouseup",leftStrikerDownDestroyer);
 
-	rightArrowUp.addEventListener("mousedown",rightStrikerUpGenerator);
-	rightArrowUp.addEventListener("mouseup",rightStrikerUpDestroyer);
+	$(leftArrowUp).bind("mousedown touchstart" ,leftStrikerUpGenerator);
+	$(leftArrowUp).bind( "mouseup touchend", leftStrikerUpDestroyer);
+	
+	$(leftArrowDown).bind("mousedown touchstart" ,leftStrikerDownGenerator);
+	$(leftArrowDown).bind( "mouseup touchend", leftStrikerDownDestroyer);
+	
 
-	rightArrowDown.addEventListener("mousedown",rightStrikerDownGenerator);
-	rightArrowDown.addEventListener("mouseup",rightStrikerDownDestroyer);
-
+	$(rightArrowUp).bind("mousedown touchstart" ,rightStrikerUpGenerator);
+	$(rightArrowUp).bind( "mouseup touchend", rightStrikerUpDestroyer);
+	
+	$(rightArrowDown).bind("mousedown touchstart" ,rightStrikerDownGenerator);
+	$(rightArrowDown).bind( "mouseup touchend", rightStrikerDownDestroyer);
 
 		
 	document.addEventListener('keydown',func);
