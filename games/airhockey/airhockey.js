@@ -32,22 +32,48 @@
 	var margleft2=striker2.style.left;
 	var ballleft=ballel.style.left;
 	var balltop=ballel.style.top;
-    var ballright=ballleft+50;
-	var	right1=margleft1+30 
+    	var ballright=ballleft+50;
+	var right1=margleft1+30 
 	var bottom2=margtop2+lengthstrikers;
 	var bottom1=margtop1+lengthstrikers;
 	var ballbottom=balltop+40;
 
 	var topline=152;
 	var bottomline=553;
-	
+	var leftupid;
+	var leftdownid;
+	var rightupid;
+	var rightdownid;
+
 	var x;
 	var y;
 	var id;
 	var time=30;
 	var flag=0;
+	var map={87:false,83:false,38:false,40:false,13:false,82:false };
+
+	var leftArrowUp=document.getElementById("leftArrowUp");
+	var leftArrowDown=document.getElementById("leftArrowDown");
+	var rightArrowUp=document.getElementById("rightArrowUp");
+	var rightArrowDown=document.getElementById("rightArrowDown");
+
+	leftArrowUp.addEventListener("mousedown",leftStrikerUpGenerator);
+	leftArrowUp.addEventListener("mouseup",leftStrikerUpDestroyer);
+
+	leftArrowDown.addEventListener("mousedown",leftStrikerDownGenerator);
+	leftArrowDown.addEventListener("mouseup",leftStrikerDownDestroyer);
+
+	rightArrowUp.addEventListener("mousedown",rightStrikerUpGenerator);
+	rightArrowUp.addEventListener("mouseup",rightStrikerUpDestroyer);
+
+	rightArrowDown.addEventListener("mousedown",rightStrikerDownGenerator);
+	rightArrowDown.addEventListener("mouseup",rightStrikerDownDestroyer);
+
+
 	
 	document.addEventListener('keydown',func);
+	document.addEventListener('keyup',func2);
+
 
 	amatuer.addEventListener("click",amatuerfunc);
 	pro.addEventListener("click",profunc);
@@ -96,7 +122,137 @@ function getallvalues()
 
 
 }
-				
+
+function leftStrikerUpGenerator(){
+	leftupid=setInterval(leftStrikerUpFunc,50);
+}
+
+function leftStrikerUpDestroyer(){
+	if(leftupid)
+	clearInterval(leftupid);
+}
+
+function leftStrikerUpFunc()
+{
+	
+	getallvalues();
+	if (margtop1> topline)
+    {	
+		striker1.style.top=(margtop1 - 20 )+ "px";
+	}
+
+	else
+	{
+		if(leftupid)
+		clearInterval(leftupid);
+	}	
+}
+
+function leftStrikerDownGenerator(){
+	leftdownid=setInterval(leftStrikerDownFunc,50);
+}
+
+function leftStrikerDownDestroyer(){
+	if(leftdownid)
+	clearInterval(leftdownid);
+}
+
+function leftStrikerDownFunc()
+{
+	getallvalues();
+	if(lengthstrikers==50 || lengthstrikers==70)   
+	{
+		if (bottom1<bottomline)
+	    {
+			striker1.style.top=(margtop1 + 20 )+ "px";
+		}
+
+		else
+		{
+			if(leftdownid)
+			clearInterval(leftdownid);
+		}	
+	}
+			
+	else if(lengthstrikers==90)
+	{
+		if (bottom1<bottomline-1)
+	    {
+			striker1.style.top=(margtop1 + 20 )+ "px";
+		}
+		else
+		{
+			if(leftdownid)
+			clearInterval(leftdownid);
+		}		
+	}
+}
+
+function rightStrikerUpGenerator()
+{	
+	rightupid=setInterval(rightStrikerUpFunc,50);
+}
+
+function rightStrikerUpDestroyer()
+{	if(rightupid)
+	clearInterval(rightupid);
+}
+
+function rightStrikerUpFunc()
+{	
+	getallvalues();
+	if (margtop2>topline)
+    {	
+		striker2.style.top=(margtop2 - 20 )+ "px";
+	}	
+
+	else
+	{
+		if(rightupid)
+		clearInterval(rightupid);
+	}	
+}
+
+function rightStrikerDownGenerator()
+{
+	rightdownid=setInterval(rightStrikerDownFunc,50);
+}
+
+function rightStrikerDownDestroyer()
+{	if(rightdownid)
+	clearInterval(rightdownid);
+}
+function rightStrikerDownFunc()
+{
+	getallvalues();
+	if(lengthstrikers==50 || lengthstrikers==70)
+	{	
+		if (bottom2<bottomline)
+		{
+			striker2.style.top=(margtop2 + 20 )+ "px";
+		}
+
+		else
+		{
+			if(rightdownid)
+			clearInterval(rightdownid);
+		}		
+	}	
+	else if(lengthstrikers==90)
+	{
+		if (bottom2<bottomline-1)
+		{
+			striker2.style.top=(margtop2 + 20 )+ "px";
+		}	
+
+		else
+		{
+			if(rightdownid)
+			clearInterval(rightdownid);
+		}	
+	}
+}
+
 function positionagain()
 {
 	ballel.style.left=610;
@@ -216,78 +372,100 @@ function func(event)
 {
 	event.preventDefault();
 	getallvalues();
-		
-	if(event.key == "ArrowDown")
+	
+	if (event.keyCode in map) {
+        map[event.keyCode] = true;
+	}
+
+	
+
+	if(map[40]==true && map[38]==false)			//downarrow and not uparrow
 	{
-		if(lengthstrikers==50 || lengthstrikers==70)
-	    {	
-	     	if (bottom2<bottomline)
-	     	{
-				striker2.style.top=(margtop2 + 20 )+ "px";
-			}	
-		}	
-		else if(lengthstrikers==90)
+		rightStrikerDownFunc();
+
+		if(map[87]==true && map[83]==false)		//w pressed along withdownarrow & not uparrow & not s
 		{
-			if (bottom2<bottomline-1)
-	     	{
-				striker2.style.top=(margtop2 + 20 )+ "px";
-			}	
+			leftStrikerUpFunc();
+		}
+
+		else if(map[83]==true && map[87]==false) //s pressed along withdownarrow & not uparrow & not w
+		{
+			leftStrikerDownFunc();
 		}
 	}
 
-	else if(event.key == "ArrowUp")
+	if(map[38]==true && map[40]==false)	//uparrow and not downarrow
 	{
-	    
-     	if (margtop2>topline)
-     	{	
-			striker2.style.top=(margtop2 - 20 )+ "px";
-		}	
+		rightStrikerUpFunc();
 
+		if(map[87]==true && map[83]==false)		//w pressed along withdownarrow & not uparrow & not s
+		{
+			leftStrikerUpFunc();
+		}
+
+		else if(map[83]==true && map[87]==false) //s pressed along withdownarrow & not uparrow & not w
+		{
+			leftStrikerDownFunc();
+		}
+	}
+
+
+	if(map[87]==true && map[83]==false)		//w and not s
+	{
+
+		leftStrikerUpFunc();
+		
+		if(map[38]==true && map[40]==false)		//uparrow pressed along with w & not downarrow & not s
+		{
+			rightStrikerUpFunc();
+		}
+
+		else if(map[40]==true && map[38]==false) //downarrow pressed along with w & not uparrow & not s
+		{
+			rightStrikerDownFunc();
+		}
 
 	}	
-		
-	else if(event.key == "W" || event.key == "w")
-	{
-		
-     	if (margtop1> topline)
-     	{
-			striker1.style.top=(margtop1 - 20 )+ "px";
-		}	
-	}
 
-	else if(event.key == "S" || event.key == "s")
+	if(map[83]==true && map[87]==false)		//s and not w
 	{
-		if(lengthstrikers==50 || lengthstrikers==70)   
-	    {
-	     	if (bottom1<bottomline)
-	     	{
-				striker1.style.top=(margtop1 + 20 )+ "px";
-			}
-		}
-			
-		else if(lengthstrikers==90)
+
+		leftStrikerDownFunc();
+		
+		if(map[38]==true && map[40]==false)		//uparrow pressed along with s & not downarrow & not w
 		{
-			if (bottom1<bottomline-1)
-	     	{
-				striker1.style.top=(margtop1 + 20 )+ "px";
-			}	
-		}	
-	}
+			rightStrikerUpFunc();
+		}
 
-	else if((event.key=="Enter")&&(flag===0))
+		else if(map[40]==true && map[38]==false) //downarrow pressed along with s & not uparrow & not w
+		{
+			rightStrikerDownFunc();
+		}
+
+	}	
+
+
+	else if(map[13]==true && flag===0)	//enter key pressed
 	{
 		beginfunc();
 		
 	}
 
-	else if(event.key=="r"|| event.key=="R")
+	else if(map[82]==true)	//if r key is pressed 
 	{
 		resetfunc();
 	}
 
+	
 }
 
+function func2(event)
+{
+	 if (event.keyCode in map) {
+        map[event.keyCode] = false;
+    }
 
+}
 function move()
 	{	
 		getallvalues();
@@ -389,4 +567,5 @@ function resetfunc()
 	amatuerfunc();
 
 }
+
 

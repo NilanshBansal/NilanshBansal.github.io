@@ -5,7 +5,7 @@
 	}
 
 	body{
-		background-color: brown;
+		background-color: lightgrey;
 
 	}
 	.speed{
@@ -228,7 +228,7 @@
 		top: 590px;
 		
 		left:900px;
-		width:350px;
+		width:370px;
 		//bottom: 10px;
 		border: 1px solid black;
 		padding: 5px;
@@ -240,5 +240,20 @@
 	}
 
 
+	.arrows{
+		position: fixed;
+		top:490px;
+		
+		
+		}
+
+	#leftArrows{
+	
+		left:134px;	
+	}
 
 
+	#rightArrows{
+		
+		left:1120px;
+	}
