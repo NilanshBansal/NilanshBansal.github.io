@@ -148,6 +148,34 @@ tr > td
 
 }
 
+.contactinfolinks{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 #airhockeyimage{
 	cursor: pointer;
+}
+
+#projectLinks{
+	
+	margin-left: 20px;
+}
+
+#projectLinks>ul{
+	list-style-type: circle;
+}
+
+#projectLinks>ul>li{
+	padding-top: 10px;
+}
+#projectLinks>ul>li>a{
+	color:blue;
+}
+#projectLinks>ul>li>a:hover{
+	color:green;
+}
+#projectLinks>ul>li>a:visited{
+	color:#551A8B;
 }
