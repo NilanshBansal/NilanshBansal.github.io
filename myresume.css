@@ -12,6 +12,9 @@
 
    		}
 
+   	a:hover{
+   		cursor: pointer;
+   	}
    	.header{
 
    		width:100%;
@@ -32,6 +35,7 @@
 	text-decoration: none;
 	padding: 10px;
 	color: purple;
+
 	
 }
 
@@ -43,6 +47,10 @@
 .headerlinks a:hover{
 	background-color: #555;
 	color: orange;
+	cursor:pointer;
+	font-size: 104%;
+	border: 1px solid #03089B;
+	box-shadow: 0px 0px 4px #040881;
 }
 
 .mainbody{
@@ -109,6 +117,10 @@
 
 }
 
+.centerpartlinksinnerdiv>a:hover{
+	cursor:pointer;
+}
+
 tr.spaceintable > td
 {
   padding-bottom: 1px;
@@ -154,6 +166,10 @@ tr > td
 	align-items: center;
 }
 
+.contactinfolinks>a:hover{
+	cursor: pointer;
+}
+
 #airhockeyimage{
 	cursor: pointer;
 }
@@ -168,13 +184,15 @@ tr > td
 }
 
 #projectLinks>ul>li{
-	padding-top: 10px;
+	padding-top: 20px;
 }
 #projectLinks>ul>li>a{
 	color:blue;
+	text-decoration: none;
 }
 #projectLinks>ul>li>a:hover{
 	color:green;
+	cursor: pointer;
 }
 #projectLinks>ul>li>a:visited{
 	color:#551A8B;
