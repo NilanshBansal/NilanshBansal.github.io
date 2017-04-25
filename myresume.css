@@ -197,3 +197,18 @@ tr > td
 #projectLinks>ul>li>a:visited{
 	color:#551A8B;
 }
+
+
+
+.progressbar{
+	width: 300px;
+  background-color: #ddd;
+  height:10px;
+  margin-top:4px;
+}
+
+li{
+	padding-top: 20px;
+	list-style: none;
+	font-family: sans-serif;
+}
