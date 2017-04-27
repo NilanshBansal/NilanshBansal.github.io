@@ -13,7 +13,7 @@
 	<div class="headerlinks">
 
 		<a href="#Education" >Education</a>
-		<a href="#Skills" >Skills</a>
+		<a href="#Skills" id="skillsheadingbtn">Skills</a>
 		<a href="#Projects">Projects</a>
 		<a href="#AdditionalInfo" >Additional Info</a>
 		<a href="#SocietiesJoined" >Societies Joined</a>
@@ -133,8 +133,8 @@
 					</div>
 				</div>
 				
-					<div class="progressbar">
-				   		<div id="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
+					<div class="progressbar"  data-percent="90%">
+				   		<div class="progressbar2" style="width:90%;height:100%;background-color: #313131;"></div>
 				   	</div>
 			  	
 	   	    </li>
@@ -147,8 +147,8 @@
 					</div>
 				</div>
 				
-				<div class="progressbar">
-			   		<div id="progressbar1" style="width:95%;height:100%; background-color: #313131;"></div>
+				<div class="progressbar" data-percent="95%">
+			   		<div class="progressbar2" style="width:95%;height:100%; background-color: #313131;"></div>
 			   	</div>
 			</li>
 
@@ -160,8 +160,8 @@
 					</div>
 				</div>
 				
-					<div class="progressbar">
-				   		<div id="progressbar2" style="width: 95%;height:100%;background-color: #313131;"></div>
+					<div class="progressbar" data-percent="95%">
+				   		<div class="progressbar2" style="width: 95%;height:100%;background-color: #313131;"></div>
 				   	</div>
 			  	
 	   	    </li>
@@ -174,8 +174,8 @@
 					</div>
 				</div>
 				
-					<div class="progressbar">
-				   		<div id="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
+					<div class="progressbar" data-percent="90%">
+				   		<div class="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
 				   	</div>
 			  	
 	   	    </li>
@@ -188,8 +188,8 @@
 					</div>
 				</div>
 				
-					<div class="progressbar">
-				   		<div id="progressbar2" style="width: 85%;height:100%;background-color: #313131;"></div>
+					<div class="progressbar" data-percent="85%">
+				   		<div class="progressbar2" style="width: 85%;height:100%;background-color: #313131;"></div>
 				   	</div>
 			  	
 	   	    </li>
@@ -202,8 +202,8 @@
 					</div>
 				</div>
 				
-					<div class="progressbar">
-				   		<div id="progressbar2" style="width: 85%;height:100%;background-color: #313131;"></div>
+					<div class="progressbar" data-percent="85%">
+				   		<div class="progressbar2" style="width: 85%;height:100%;background-color: #313131;"></div>
 				   	</div>
 			  	
 	   	    </li>
@@ -218,8 +218,8 @@
 					</div>
 				</div>
 				
-					<div class="progressbar">
-				   		<div id="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
+					<div class="progressbar" data-percent="90%">
+				   		<div class="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
 				   	</div>
 			  	
 	   	    </li>
@@ -232,8 +232,8 @@
 					</div>
 				</div>
 				
-					<div class="progressbar">
-				   		<div id="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
+					<div class="progressbar" data-percent="90%">
+				   		<div class="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
 				   	</div>
 			  	
 	   	    </li>
@@ -245,8 +245,8 @@
 					</div>
 				</div>
 				
-					<div class="progressbar">
-				   		<div id="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
+					<div class="progressbar" data-percent="90%">
+				   		<div class="progressbar2" style="width: 90%;height:100%;background-color: #313131;"></div>
 				   	</div>
 			  	
 	   	    </li>
@@ -395,6 +395,7 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script>
+var clicked=0;
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -418,6 +419,30 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+$('#skillsheadingbtn').on('click',function(){
+
+		if(clicked==0)
+			clicked=1;
+		else
+		{
+			$('.progressbar').each(function(){	
+				$(this).find('.progressbar2').stop();
+			});	
+		}
+
+		console.log("hello");
+		$('.progressbar').each(function(){
+			
+			$(this).find('.progressbar2').css('width', '0%').animate({
+				width:$(this).attr('data-percent')
+			},5000);
+		});
+
+	});	
+
 });
+
+
 </script>
 </html>
