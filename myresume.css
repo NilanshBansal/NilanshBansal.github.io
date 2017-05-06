@@ -190,12 +190,14 @@ tr > td
 	color:blue;
 	text-decoration: none;
 }
+
+#projectLinks>ul>li>a:visited{
+	color:#551A8B;
+}
+
 #projectLinks>ul>li>a:hover{
 	color:green;
 	cursor: pointer;
-}
-#projectLinks>ul>li>a:visited{
-	color:#551A8B;
 }
 
 
