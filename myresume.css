@@ -75,7 +75,7 @@
 	
 	height: 300px;
 	width:320px;
-	border:1px solid grey;
+	
 	border-radius:50%;
 
 }
@@ -89,7 +89,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+
 	
 }
 .contentcenterpart{
