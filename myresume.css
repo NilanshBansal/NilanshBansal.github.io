@@ -100,7 +100,9 @@
 	font-family: Roboto,sans-serif;
 	
 }
-
+.contentcenterpart h1{
+	font-size: 30px;
+}
 .centerpartlinks{
 	
 	display: flex;
