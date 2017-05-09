@@ -3,3 +3,13 @@
 # To ban all spiders from the entire site uncomment the next two lines:
 # User-agent: *
 # Disallow: /
+
+#allowing all spiders from entire site to crawl
+
+ User-agent: *
+ Disallow: 
+ 
+ Sitemap: https://nilanshbansal.github.io/sitemap.xml
+ 
+
+

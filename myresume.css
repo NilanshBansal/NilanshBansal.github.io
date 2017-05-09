@@ -100,9 +100,25 @@
 	font-family: Roboto,sans-serif;
 	
 }
-.contentcenterpart h1{
+.contentcenterpartinnerdiv{
 	font-size: 30px;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-around;
+
 }
+.contentcenterpartinnerdiv > h1{
+	font-size: 30px;
+	
+}
+
+.contentcenterpartinnerdivpelements {
+	font-size: 20px;
+	font-weight: 400;
+	
+}	
+
+
 .centerpartlinks{
 	
 	display: flex;
@@ -119,6 +135,10 @@
 	justify-content: space-around;
 	
 
+}
+
+.centerpartlinksinnerdiv i{
+	font-size:40px;
 }
 
 .centerpartlinksinnerdiv>a:hover{
@@ -149,9 +169,26 @@ tr > td
 	
 }
 
+.Educationheadingdiv{
+	background-color: whitesmoke;
+
+}
+
+.Educationheadingdiv > h2{
+	
+	color:#4a4a4a;
+	font-family: Roboto,sans-serif;
+
+}
+
 .Educationinnerdiv{
 	display: flex;
 	justify-content: space-between;
+}
+
+#einstein{
+	height:324px;
+	width:460px;
 }
 .technicalskillsimages{
 	display: flex;
@@ -217,4 +254,13 @@ li{
 	padding-top: 20px;
 	list-style: none;
 	font-family: sans-serif;
+}
+
+#Skillsheading{
+	color:#4a4a4a;
+	font-family: Roboto,sans-serif;
+}
+
+.Skillsinnerdiv{
+	background-color: whitesmoke;
 }
