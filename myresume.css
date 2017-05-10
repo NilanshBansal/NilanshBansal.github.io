@@ -1,266 +1,310 @@
-*{
-		font-family: verdana;
-		margin:0;
-		padding: 0;
-
-	}
-
-	body {
-	
-		background-color: whitesmoke;
-
-
-   		}
-
-   	a:hover{
-   		cursor: pointer;
-   	}
-   	.header{
-
-   		width:100%;
-   		background-color: #fff;
-		position:fixed;
-		top:0;
-		
-   	}
-
-   	.headerlinks {
-   		
-   		display: flex;
-		justify-content: space-around;
-
-   	}
-
-   	.headerlinks a{
-	text-decoration: none;
-	padding: 10px;
-	color: purple;
-
-	
+* {
+    font-family: verdana;
+    margin: 0;
+    padding: 0;
 }
 
-.headerlinks a:visited{
-	text-decoration: none;
-	color: purple;
+body {
+    background-color: whitesmoke;
 }
 
-.headerlinks a:hover{
-	background-color: #555;
-	color: orange;
-	cursor:pointer;
-	font-size: 104%;
-	border: 1px solid #03089B;
-	box-shadow: 0px 0px 4px #040881;
+a:hover {
+    cursor: pointer;
 }
 
-.mainbody{
-	margin: 30px;
-	
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-
+.header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
 }
 
-.myinfo{
-
-	display: flex;
-	
-	margin-top: 100px;
-	justify-content: space-around;
-	
-
+.headerlinks {
+    display: flex;
+    justify-content: space-around;
 }
-#profilepic{
-	
-	height: 330px;
-	width:280px;
-	
-	border-radius:50%;
 
+.headerlinks a {
+    text-decoration: none;
+    padding: 10px;
+    color: purple;
 }
-.centerpart{
-	background-color: #fff;
-	width:600px;
-	padding: 50px;	
 
+.headerlinks a:visited {
+    text-decoration: none;
+    color: purple;
 }
-.centerleftpart{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
-	
+.headerlinks a:hover {
+    background-color: #555;
+    color: orange;
+    font-size: 104%;
+    border: 1px solid #03089B;
+    box-shadow: 0px 0px 4px #040881;
 }
-.contentcenterpart{
-	color:#4a4a4a;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	font-family: Roboto,sans-serif;
-	
-}
-.contentcenterpartinnerdiv{
-	font-size: 30px;
-	font-weight: 400;
-	display: flex;
-	justify-content: space-around;
 
+.mainbody {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.contentcenterpartinnerdiv > h1{
-	font-size: 30px;
-	
+
+.myinfo {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+#profilepic {
+    height: 330px;
+    width: 280px;
+    border-radius: 50%;
+}
+
+.centerpart {
+    background-color: #fff;
+    width: 600px;
+    padding: 50px;
+}
+
+.centerleftpart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentcenterpart {
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Roboto, sans-serif;
+}
+
+.contentcenterpartinnerdiv {
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contentcenterpartinnerdiv > h1 {
+    font-size: 30px;
 }
 
 .contentcenterpartinnerdivpelements {
-	font-size: 20px;
-	font-weight: 400;
-	
-}	
-
-
-.centerpartlinks{
-	
-	display: flex;
-	justify-content: space-around;
-	margin-top: 10px;
-	
-	
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.centerpartlinksinnerdiv{
-	
-	width:50%;
-	display: flex;
-	justify-content: space-around;
-	
-
+.centerpartlinks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
-.centerpartlinksinnerdiv i{
-	font-size:40px;
+.centerpartlinksinnerdiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.centerpartlinksinnerdiv>a:hover{
-	cursor:pointer;
+.centerpartlinksinnerdiv i {
+    font-size: 40px;
 }
 
-tr.spaceintable > td
-{
-  padding-bottom: 1px;
-  padding-top: 1px;
+tr.spaceintable > td {
+    padding-bottom: 1px;
+    padding-top: 1px;
 }
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 50%;
-    background-color:#fff;
+    background-color: #fff;
 }
 
-tr > td
-{
-  padding-bottom: 1em;
+tr > td {
+    padding-bottom: 1em;
 }
 
-.Education{
-
-	margin-top: 100px;
-	
+.Education {
+    margin-top: 100px;
 }
 
-.Educationheadingdiv{
-	background-color: whitesmoke;
-
+.Educationheadingdiv,
+.AdditionalInfoheadingdiv,
+.SocietiesJoinedheadingdiv,
+.ContactInfoheadingdiv,
+.Skillsheadingdiv,
+.Projectsheadingdiv {
+    background-color: whitesmoke;
 }
 
-.Educationheadingdiv > h2{
-	
-	color:#4a4a4a;
-	font-family: Roboto,sans-serif;
-
+.Educationinnerdiv {
+    display: flex;
+    justify-content: space-between;
 }
 
-.Educationinnerdiv{
-	display: flex;
-	justify-content: space-between;
+#einstein {
+    height: 324px;
+    width: 460px;
 }
 
-#einstein{
-	height:324px;
-	width:460px;
-}
-.technicalskillsimages{
-	display: flex;
-	padding:10px;
-	justify-content: space-around;
+.technicalskillsimages {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
 }
 
-.ContactInfo{
-	background-color: #4a4a4a;
-
+#gdgbvpimage,
+#bvpcsiimage {
+    height: 100px;
+    width: 150px;
 }
 
-.contactinfolinks{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+#bvpcsiimage {
+    border-radius: 10px;
 }
 
-.contactinfolinks>a:hover{
-	cursor: pointer;
+#nssimage {
+    height: 120px;
+    width: 150px;
 }
 
-#airhockeyimage{
-	cursor: pointer;
+.ContactInfo {
+    background-color: #4a4a4a;
 }
 
-#projectLinks{
-	
-	margin-left: 20px;
+#Contactinfo_details {
+    padding-left: 30px;
+    color: white;
 }
 
-#projectLinks>ul{
-	list-style-type: circle;
+.contactinfolinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
 }
 
-#projectLinks>ul>li{
-	padding-top: 20px;
-}
-#projectLinks>ul>li>a{
-	color:blue;
-	text-decoration: none;
+#gmailimage,
+#fbimage {
+    height: 120px;
+    width: 150px;
 }
 
-#projectLinks>ul>li>a:visited{
-	color:#551A8B;
+#linkedinimage {
+    height: 100px;
+    width: 150px;
 }
 
-#projectLinks>ul>li>a:hover{
-	color:green;
-	cursor: pointer;
+#whatsappimage {
+    height: 150px;
+    width: 250px;
 }
 
-
-
-.progressbar{
-	width: 300px;
-  background-color: #ddd;
-  height:10px;
-  margin-top:4px;
+#airhockeyimage {
+    height: 200px;
+    width: 300px;
 }
 
-li{
-	padding-top: 20px;
-	list-style: none;
-	font-family: sans-serif;
+#projectLinks {
+    margin-left: 20px;
 }
 
-#Skillsheading{
-	color:#4a4a4a;
-	font-family: Roboto,sans-serif;
+#projectLinks>ul {
+    list-style-type: circle;
 }
 
-.Skillsinnerdiv{
-	background-color: whitesmoke;
+#projectLinks>ul>li {
+    padding-top: 20px;
+}
+
+#projectLinks>ul>li>a {
+    color: blue;
+    text-decoration: none;
+}
+
+#projectLinks>ul>li>a:visited {
+    color: #551A8B;
+}
+
+#projectLinks>ul>li>a:hover {
+    color: green;
+}
+
+.skill-bars_outerdiv {
+    width: 300px;
+}
+
+.progressbar {
+    width: 300px;
+    background-color: #ddd;
+    height: 10px;
+    margin-top: 4px;
+}
+
+.progressbar_outerdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.percentage2 {
+    border-radius: 30%;
+    border: 2px solid #313131;
+    font-size: 14px;
+}
+
+#progressbar1_outerdiv,
+#progressbar4_outerdiv,
+#progressbar5_outerdiv,
+#progressbar6_outerdiv,
+#progressbar7_outerdiv,
+#progressbar8_outerdiv,
+#progressbar9_outerdiv {
+    width: 90%;
+}
+
+#progressbar2_outerdiv,
+#progressbar3_outerdiv {
+    width: 95%;
+}
+
+#progressbar2_innerwidth1,
+#progressbar2_innerwidth4,
+#progressbar2_innerwidth5,
+#progressbar2_innerwidth6,
+#progressbar2_innerwidth7,
+#progressbar2_innerwidth8,
+#progressbar2_innerwidth9 {
+    width: 90%;
+}
+
+#progressbar2_innerwidth2,
+#progressbar2_innerwidth3 {
+    width: 95%;
+}
+
+.progressbar2 {
+    height: 100%;
+    background-color: #313131;
+}
+
+li {
+    padding-top: 20px;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.Educationheadingdiv > h2,
+#Projectsheading,
+#Skillsheading,
+#ContactInfoheading,
+#AdditionalInfoheading,
+#SocietiesJoinedheading {
+    color: #4a4a4a;
+    font-family: Roboto, sans-serif;
 }
