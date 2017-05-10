@@ -273,6 +273,10 @@ tr > td {
     width: 95%;
 }
 
+#progressbar10_outerdiv{
+	width: 70%;
+}
+
 #progressbar2_innerwidth1,
 #progressbar2_innerwidth4,
 #progressbar2_innerwidth5,
@@ -286,6 +290,10 @@ tr > td {
 #progressbar2_innerwidth2,
 #progressbar2_innerwidth3 {
     width: 95%;
+}
+
+#progressbar2_innerwidth10{
+	width: 70%;
 }
 
 .progressbar2 {
