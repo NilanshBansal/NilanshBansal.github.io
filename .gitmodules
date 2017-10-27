@@ -1,0 +1,3 @@
+[submodule "games/2048_"]
+	path = games/2048_
+	url = https://github.com/NilanshBansal/NilanshBansal.github.io.git
