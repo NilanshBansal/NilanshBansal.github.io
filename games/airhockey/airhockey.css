@@ -8,7 +8,7 @@ body {
 }
 
 .speed {
-    display: block;
+    display: flex;
     flex-direction: column;
     position: fixed;
     background-color: #fff;
