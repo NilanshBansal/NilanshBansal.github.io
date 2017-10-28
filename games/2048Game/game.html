@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <div class="upper">
+                    <div class="left"> 2048 </div>
+                    <div class="score">
+                        <span id="scoreText"> Score </span>
+                        <span id="points"> 0 </span>
+                    </div>
+                </div>
+                <div class="lower">
+                    <span> Join the numbers and get to the
+                        <strong> 2048 tile! </strong>
+                    </span>
+                    <div id="newGame"> New Game </div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="grid">
+                    <div class="row">
+                        <div class="element" id="pos00"> </div>
+                        <div class="element" id="pos01"> </div>
+                        <div class="element" id="pos02"> </div>
+                        <div class="element" id="pos03"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="element" id="pos10"> </div>
+                        <div class="element" id="pos11"> </div>
+                        <div class="element" id="pos12"> </div>
+                        <div class="element" id="pos13"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="element" id="pos20"> </div>
+                        <div class="element" id="pos21"> </div>
+                        <div class="element" id="pos22"> </div>
+                        <div class="element" id="pos23"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="element" id="pos30"> </div>
+                        <div class="element" id="pos31"> </div>
+                        <div class="element" id="pos32"> </div>
+                        <div class="element" id="pos33"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instructions">
+                <strong> HOW TO PLAY: </strong> Use your
+                <strong> arrow keys </strong> to move the tiles. When two tiles with the same number touch, they
+                <strong> merge into one! </strong>
+            </div>
+
+            <div class="footer">
+                Created By
+                <strong> Nilansh Bansal </strong>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="../../jquery/jquery.js"></script>
+<script src="game.js"></script>
+
+</html>

@@ -1,0 +1,119 @@
+
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+		}
+
+		body{
+			background-color: #faf8ef
+		}
+
+		.container{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin: 20px;
+		}
+
+		.main{
+			display: flex;
+			width: 40%;
+			flex-direction: column;
+		}
+
+		.header{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 10px;
+			border: 1px solid black;
+		}
+
+		.upper{
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.left{
+			font-size: 40px;
+			color: #776E65;
+		}
+
+		.score{
+			display: flex;
+			flex-direction: column;
+			background-color: grey;
+			padding: 5px;
+			border-radius: 4%;
+			background-color: #bbada0;
+			width: 50px;
+		}
+
+		#scoreText{
+			color: #eee4da;
+			font-size: 10px;
+			text-align: center;
+		}
+
+		.lower{
+			color: #776E65;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.game{
+			height: 450px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.grid{
+			height: 400px;
+			width: 400px;
+			box-sizing: border-box;
+			border: 6px solid #bbada0;
+			border-radius: 1%;
+		}
+
+		.row{
+			height: 25%;
+			box-sizing: border-box;
+			display: flex;
+		}
+
+		.element{
+			height: 100%;
+			width: 25%;
+			border: 3px solid #bbada0;
+			background-color: #cdc1b4;
+			font-size: 60px;
+			text-align: center;
+			padding-top: 10px;
+			box-sizing: border-box;
+		}
+
+		.instructions{
+			padding: 5px;
+			color: #776E65;
+			border-bottom: 1px solid #bbada0;
+		}
+
+		.footer{
+			color: #776E65;
+			padding: 5px;
+			text-align: center;
+		}
+
+		#points{
+			text-align: center;
+			color: white;
+		}
+        
+		#newGame:hover{
+			cursor: pointer;
+			color: black;
+		}
