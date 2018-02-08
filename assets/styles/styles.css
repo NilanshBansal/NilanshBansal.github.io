@@ -339,3 +339,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #7d7d7d;
 }
 
+
+@media only screen and (max-width: 639px) {
+    #noddysClub{
+		padding-top:30px;
+	}
+}
+
+
