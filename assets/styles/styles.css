@@ -339,6 +339,16 @@ h1, h2, h3, h4, h5, h6 {
 	color: #7d7d7d;
 }
 
+@media only screen and (max-width:430px){
+
+	.first-anchor{
+		margin-bottom: 15px;
+	}
+	.cta-button{
+		display: block;
+	}
+	
+}
 
 @media only screen and (max-width: 639px) {
     #spacingStyleCss{
