@@ -339,10 +339,13 @@ h1, h2, h3, h4, h5, h6 {
 	color: #7d7d7d;
 }
 
-@media only screen and (max-width:430px){
+@media only screen and (max-width:647px){
 
 	.first-anchor{
-		margin-bottom: 15px;
+		margin-bottom: 10px;
+	}
+	.second-anchor{
+		margin-bottom: 10px;
 	}
 	.cta-button{
 		display: block;
