@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
 	<title>Nilansh's Portfolio </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 	<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
 	<link rel="stylesheet" href="">
@@ -23,7 +24,7 @@
 	<link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 
-<body >
+<body>
 	<div class="wrapper">
 		<div class="thin-bar">
 		</div>
@@ -46,7 +47,7 @@
 					<div class="cta text-center">
 						<a class="my-button cta-button expand form-button first-anchor" href="mailto:bansalnilansh@gmail.com">Get In Touch</a>
 						<a class="my-button cta-button expand form-button second-anchor" target="_blank" href="https://drive.google.com/open?id=1kVCdCpugdv2yvbf9t33Ay_sLASJqKwTj">View Pdf Resume</a>
-						<a class="my-button cta-button expand form-button third-anchor" target="_blank" href="https://drive.google.com/open?id=14j8CsOTeuPiscJNwXXeqDkd5EFVqr39L">Elitmus Score</a>					
+						<a class="my-button cta-button expand form-button third-anchor" target="_blank" href="https://drive.google.com/open?id=14j8CsOTeuPiscJNwXXeqDkd5EFVqr39L">Elitmus Score</a>
 					</div>
 				</div>
 				<div class="small-12 column">
@@ -128,134 +129,281 @@
 		</section>
 
 		<section id="work">
-			<h2 class="text-center">Work</h2>
-			<div class="row">
-				<p class="text-center tag-line">Here are few of my works.</p>
-			</div>
+			<h2 class="text-center">My Works</h2>
+			<!-- <div class="row"> -->
+			<!-- <p class="text-center tag-line">Here are few of my works.</p> -->
+			<!-- </div> -->
+			<div class="row" style="display: flex; justify-content: space-around;">
 
-
-			<div class="row work-row">
-				<!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/airhockey.png" alt="">
+				<div class="ui large buttons">
+					<button class="ui button active" id="web_button" onclick="show_web_projects()">Web</button>
+					<div class="or"></div>
+					<button class="ui button" id="python_button" onclick="show_python_projects()">ML </button>
 				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>2 player Air Hockey Game</h3>
-						<p class="platform">Web</p>
-						<p class="icons">
-							<i class="fi-monitor"></i>
-							<!-- <i class="fi-tablet-portrait"></i> -->
-							<!-- <i class="fi-mobile"></i> -->
-						</p>
-						<p>A two player Air Hockey game with the functionality of ball speed and difficulty level adjustment.</p>
-						<a class="my-button" target="_blank" href="./games/airhockey/airhockeymodified.html">Play Game</a>
+
+			</div>
+			<br/>
+			<br/>
+
+			<div id="web_projects">
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/airhockey.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>2 player Air Hockey Game</h3>
+							<p class="platform">Web</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<!-- <i class="fi-tablet-portrait"></i> -->
+								<!-- <i class="fi-mobile"></i> -->
+							</p>
+							<p>A two player Air Hockey game with the functionality of ball speed and difficulty level adjustment.</p>
+							<a class="my-button" target="_blank" href="./games/airhockey/airhockeymodified.html">Play Game</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row work-row">
+					<!-- even -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/2048.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>2048 Game</h3>
+							<p class="platform">Web</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<!-- <i class="fi-tablet-portrait"></i> -->
+								<!-- <i class="fi-mobile"></i> -->
+							</p>
+							<p>2048 game developed using native Javascript.</p>
+							<a class="my-button" target="_blank" href="./games/2048Game/game.html">Play Game</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/interactive_audio_player_2.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>INTERACTIVE AUDIO PLAYER</h3>
+							<p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p>
+							<p>An Interactive Transcripts Audio Player in which the transcripts are synced with the audio played. Clicking on any
+								part of the transcript will resume the audio from there. Developed using Sound Manager 2.</p>
+							<a class="my-button" target="_blank" href="https://soundmanager2-integration.herokuapp.com/">Visit Web App</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row work-row">
+					<!-- even -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/chat-app4.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>Real Time Chat App</h3>
+							<p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p>
+							<p>An app developed using Sockets.io and Node.js to facilitate real time chat for multiple users. Supports the functionality
+								of chat rooms.</p>
+							<a class="my-button" target="_blank" href="https://real-time-chat-app-1997.herokuapp.com/">Visit Web App</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/image5.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>Article's Crud App</h3>
+							<p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p>
+							<p>A crud app with Access Control and User Management (encrypted passwords) functionality developed using Node.js,Express.js
+								& MongoDB.</p>
+							<a class="my-button" target="_blank" href="http://articles-crud-app.cleverapps.io/">Visit Web App</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row work-row">
+					<!-- even -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/leaflet-map2.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>Gender Based Tweets Clustering</h3>
+							<p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p>
+							<p>LeafletJs used to depict the tweets on world map based on the tweet's location. It automatically clusters and de-clusters
+								the tweets & calculate gender wise distribution within an area.</p>
+							<a class="my-button" target="_blank" href="https://leaflet-js-map.herokuapp.com/">Visit Web App</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row work-row">
-				<!-- even -->
-				<div class="small-12 medium-6 columns">
-					<img src="assets/images/2048.png" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-offset-1 columns">
-					<div class="details details-ftm">
-						<h3>2048 Game</h3>
-						<p class="platform">Web</p>
-						<p class="icons">
-							<i class="fi-monitor"></i>
-							<!-- <i class="fi-tablet-portrait"></i> -->
-							<!-- <i class="fi-mobile"></i> -->
-						</p>
-						<p>2048 game developed using native Javascript.</p>
-						<a class="my-button" target="_blank" href="./games/2048Game/game.html">Play Game</a>
+			<div id="python_projects" style="display: none">
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/nlp_playground.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>Sentiment Analysis Playground</h3>
+							<!-- <p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p> -->
+							<p>NLP Playground API developed using Flask. Sentiment Analysis Engine backend developed using NLTK, scikit-learn classifiers.
+								Models trained on 10662 tweets categorized into positive and negative.</p>
+							<a class="my-button" target="_blank" href="http://35.243.134.206:5000/">View</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row work-row">
-				<!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/interactive_audio_player_2.png" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>INTERACTIVE AUDIO PLAYER</h3>
-						<p class="platform">Web | Android | IOS</p>
-						<p class="icons">
-							<i class="fi-monitor"></i>
-							<i class="fi-tablet-portrait"></i>
-							<i class="fi-mobile"></i>
-						</p>
-						<p>An Interactive Transcripts Audio Player in which the transcripts are synced with the audio played. Clicking on any
-							part of the transcript will resume the audio from there. Developed using Sound Manager 2.</p>
-						<a class="my-button" target="_blank" href="https://soundmanager2-integration.herokuapp.com/">Visit Web App</a>
+				<div class="row work-row">
+					<!-- even -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/customer_retention_prediction.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>Customer Retention Prediction</h3>
+							<!-- <p class="platform">Web</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p> -->
+							<p>An Artificial Neural Network to predict whether a customer stays in a bank. Parameters considered were Credit Score,
+								Gender, Age, Balance, Estimated Salary etc.
+								<br> Accuracy: 86.47 % </p>
+							<br/>
+							<a class="my-button" target="_blank" href="https://github.com/NilanshBansal/Churn_Modelling_ANN">View</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row work-row">
-				<!-- even -->
-				<div class="small-12 medium-6 columns">
-					<img src="assets/images/chat-app4.png" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-offset-1 columns">
-					<div class="details details-ftm">
-						<h3>Real Time Chat App</h3>
-						<p class="platform">Web | Android | IOS</p>
-						<p class="icons">
-							<i class="fi-monitor"></i>
-							<i class="fi-tablet-portrait"></i>
-							<i class="fi-mobile"></i>
-						</p>
-						<p>An app developed using Sockets.io and Node.js to facilitate real time chat for multiple users. Supports the functionality of chat rooms.</p>
-						<a class="my-button" target="_blank" href="https://real-time-chat-app-1997.herokuapp.com/">Visit Web App</a>
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/stock_price_prediction.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>Stock Price Prediction</h3>
+							<!-- <p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p> -->
+							<br/>
+							<p>A Recurrent Neural Network to predict stock prices on the basis of trend analysis of previous stock prices. Stock
+								Price was predicted for different times in the future with varying LSTM layers.</p>
+							<a class="my-button" target="_blank" href="https://github.com/NilanshBansal/Stock_Price_Prediction/">View</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row work-row">
-				<!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/image5.png" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>Article's Crud App</h3>
-						<p class="platform">Web | Android | IOS</p>
-						<p class="icons">
-							<i class="fi-monitor"></i>
-							<i class="fi-tablet-portrait"></i>
-							<i class="fi-mobile"></i>
-						</p>
-						<p>A crud app with Access Control and User Management (encrypted passwords) functionality developed using Node.js,Express.js
-							& MongoDB.</p>
-						<a class="my-button" target="_blank" href="http://articles-crud-app.cleverapps.io/">Visit Web App</a>
+				<div class="row work-row">
+					<!-- even -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/twitter_sentiment_analysis.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>Twitter Sentiment Analysis</h3>
+							<!-- <p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p> -->
+							<p>Sentiment Analysis on realtime twitter data with live graphs using nltk, twitter-streaming­ api, scikit­learn, matplotlib.
+								Classifiers used were Naive Bayes, Multinomial NB, Bernoulli NB, Logistic, SGD, NuSVC. Accuracy calculated for all
+								the classifiers separately and a combined voting classifier formed.
+								<br/>Accuracy: 73.72 %</p>
+							<a class="my-button" target="_blank" href="https://github.com/NilanshBansal/Twitter_Sentiment_Analysis">View</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row work-row">
-				<!-- even -->
-				<div class="small-12 medium-6 columns">
-					<img src="assets/images/leaflet-map2.png" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-offset-1 columns">
-					<div class="details details-ftm">
-						<h3>Gender Based Tweets Clustering</h3>
-						<p class="platform">Web | Android | IOS</p>
-						<p class="icons">
-							<i class="fi-monitor"></i>
-							<i class="fi-tablet-portrait"></i>
-							<i class="fi-mobile"></i>
-						</p>
-						<p>LeafletJs used to depict the tweets on world map based on the tweet's location. It automatically clusters and de-clusters the tweets & calculate gender wise distribution within an area.</p>
-						<a class="my-button" target="_blank" href="https://leaflet-js-map.herokuapp.com/">Visit Web App</a>
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/scraping2.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>Web Scraping</h3>
+							<!-- <p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p> -->
+							<br/>
+							<p>Experience of scraping websites such as Crunchbase, LinkedIn, Paytm, MouthShut, Amazon, Pinterest, Zomato etc. Used
+								Python Urllib module & Scrapy, Splash Frameworks with Proxy Chaining & Request Headers Modulation.
+							</p>
+							<!-- <a class="my-button" target="_blank" href="http://articles-crud-app.cleverapps.io/">Visit Web App</a> -->
+						</div>
 					</div>
 				</div>
-			</div>
 
+				<!-- <div class="row work-row">
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/leaflet-map2.png" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>Gender Based Tweets Clustering</h3>
+							<p class="platform">Web | Android | IOS</p>
+							<p class="icons">
+								<i class="fi-monitor"></i>
+								<i class="fi-tablet-portrait"></i>
+								<i class="fi-mobile"></i>
+							</p>
+							<p>LeafletJs used to depict the tweets on world map based on the tweet's location. It automatically clusters and de-clusters
+								the tweets & calculate gender wise distribution within an area.</p>
+							<a class="my-button" target="_blank" href="https://leaflet-js-map.herokuapp.com/">Visit Web App</a>
+						</div>
+					</div>
+				</div> -->
+			</div>
 		</section>
 
 		<section id="teaching">

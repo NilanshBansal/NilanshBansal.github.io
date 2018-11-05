@@ -79,3 +79,19 @@ const Portfolio = function() {
 
 Portfolio.displayWordCloud();
 Portfolio.typeAnimation();
+
+function show_python_projects(){
+	var web_projects = document.getElementById("web_projects");
+	var python_projects = document.getElementById("python_projects");
+	var web_button = document.getElementById("web_button");
+	web_projects.style.display = "none";
+	python_projects.style.display = "block";
+	web_button.classList.remove("active");
+}
+
+function show_web_projects(){
+	var web_projects = document.getElementById("web_projects");
+	var python_projects = document.getElementById("python_projects");
+	python_projects.style.display = "none";
+	web_projects.style.display = "block";
+}
