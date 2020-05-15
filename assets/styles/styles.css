@@ -133,8 +133,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 2em;
 }
 
-.fa {
-	font-size: 1.2em;
+.profile-icons .fab {
+	/* font-size: 1.2em; */
 	padding: 0.1em 0.4em;
 	color: #8a8a8a;
 }
