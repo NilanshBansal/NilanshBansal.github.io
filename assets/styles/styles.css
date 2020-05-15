@@ -139,6 +139,22 @@ h1, h2, h3, h4, h5, h6 {
 	color: #8a8a8a;
 }
 
+.fa-twitter:hover{
+	color: rgb(0, 172, 237);
+}
+.fa-stack-overflow:hover{
+	color: #FF9900;
+}
+.fa-github:hover{
+	color:black;
+}
+.fa-linkedin:hover{
+	color:rgb(40,103,178);
+}
+.fa-dev:hover{
+	color:black;
+}
+
 .fa:hover {
 	cursor: pointer;
 }
